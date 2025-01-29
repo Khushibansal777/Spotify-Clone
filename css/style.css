@@ -1,0 +1,749 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Itim&family=Rubik+Wet+Paint&display=swap');
+:root{
+    --a :0;
+}
+body{
+    background-color: black;
+    color: grey;
+    font-family: "Itim", serif;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+/* .navbar{
+    height: 50px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .home {
+    position: relative; /* Needed for pseudo-element positioning 
+    margin-left: -3px;
+    z-index: -1;
+}*/
+/*
+.navbar .home::before {
+    
+    position: absolute;
+    top: 50%; /* Center vertically 
+    left: -50px; /* Adjust distance from the home icon 
+    transform: translateY(-50%); /* Center alignment 
+    width: 40px; /* Adjust the size of the circle 
+    height: 40px; /* Same as width for a perfect circle 
+    background-color: lightgrey; /* Light grey circle 
+    border-radius: 50%; /* Make it circular 
+    z-index: -1; /* Ensure it stays behind the home icon 
+}*/
+/*
+.searchbar{
+    border-radius: 31px;
+    width:466px;
+    display: flex;
+    height: 42px;
+    
+}
+.searchbar img{
+    position: relative;
+    top: 8px;
+    left: 9px
+}
+.searchbar .divider {
+    height: 20px;
+    width: 3.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 12px 10px;
+  }
+.input{
+    background: none;
+    border: none;
+    width:268px;
+    height: 35px;
+    margin-top: 7px;
+}
+.input:hover{
+    border:none;
+}
+.middle{
+    display: flex;
+    align-items: center;
+    
+}
+.middle2{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    
+}
+
+.middle3{
+    display: flex;
+    top: 2px;
+    gap: 12px;
+}
+.middle4{
+    display: flex;
+    top: 2px;
+    gap: 7px;
+}
+
+.install{
+    margin-left:47px;
+    margin-right:-18px;
+}
+.installmiddle{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.buttons{
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    
+}
+ .buttons > * { 
+   margin: 0px 12px;
+} 
+.signupbtn{
+ background-color: black;
+ color: grey;
+ font-weight: bold;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ font-size: 16px;
+ width: 80px;
+ margin: 0px 0px 5px -1px;
+}
+.signupbtn:hover{
+ color: white;
+ font-size: 17px;
+}
+.loginbtn{
+  background-color: white;
+  border-radius: 21px;
+  color: black;
+  padding: 10px;
+  width: 79px;
+  cursor: pointer;
+  margin: -7px -1px -1px -2px;
+  cursor: pointer;
+}
+.loginbtn:hover{
+    width: 82px;
+    padding: 10px 14px;
+    font-weight:bold;
+   } */
+   .navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px;
+    background: #000;
+    min-height: 30px;
+  }
+  
+  .middle {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  
+  
+  .search {
+    display: flex;
+    padding: 0px 3px;
+    justify-content: space-between;
+    align-items: center;
+    background: #1f1f1f;
+    width: 450px;
+    border-radius: 30px;
+  }
+  
+  .search input {
+    background: transparent;
+    font-weight: 400;
+    font-size: large;
+    width: 350px;
+    border: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  .search .divider {
+    height: 20px;
+    width: 1.5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+  }
+  
+  .invert {
+    filter: invert(100%);
+  }
+  
+  .home {
+    background: #1f1f1f;
+    border-radius: 25px;
+    border: none;
+  }
+  
+  
+  .logo {
+    text-decoration: none;
+    border: none;
+    background: none;
+  }
+  
+  .logo img {
+    width: 35px;
+    list-style: none;
+  
+  }
+  
+  .search button {
+    text-decoration: none;
+    border: none;
+    background: none;
+  }
+  
+  .middle button img {
+    width: 25px;
+    list-style: none;
+    padding: 10px;
+  
+  }
+  
+  .buttons {
+  
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .buttons button {
+    width: 90px;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .signup {
+    background: none;
+    color: rgb(156, 148, 148);
+    outline: none;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .signup:hover {
+    font-size: 17px;
+    color: white;
+  }
+  
+  .login {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+  }
+  
+  .login:hover {
+    font-weight: bold;
+    font-size: 17px;
+  }
+.left{
+    width: 25vw;
+}
+.close{
+    margin-left: 340px;
+    margin-top: 6px;
+    cursor: pointer;
+    display: none;
+}
+.library{
+    min-height: 80vh;
+    position: relative;
+}
+.heading{
+    display: flex;
+    width: 100%;
+    font-size: 14px;
+}
+.heading img{
+    width: 24px;
+}
+.songList{
+    height: 340px;
+    overflow: auto;
+    margin-bottom: 110px;
+}
+.songList ul li {
+    list-style-type: decimal;
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin: 12px 0px;
+    padding: 11px 6px;
+    border-radius: 5px;
+}
+.songList .info{
+  font-size: 13px;
+  width: 344px;
+}
+.playnow{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+.playnow span{
+   font-size: 15px;
+   width: 65px;
+}
+.footer{
+    display: flex;
+    font-size: 13px;
+    gap: 11px;
+    position:absolute;
+    bottom: 49px;
+    flex-wrap:wrap;
+    left: 20px;
+    
+}
+.footer a{
+    color: grey;
+    text-decoration: none;
+}
+.english{
+    background-color: black;
+    color: white;
+    position:absolute;
+    bottom: -2px;
+    left: 11px;
+    border-radius: 51%;
+    border: 0.5px solid white;
+    
+}
+.right{
+    width: 75vw;
+    position: relative;
+    
+}
+.popularArtists{
+    color: white;
+    padding-left: 18px;
+}
+.cardContainer{
+ display: flex;
+ gap: 65px;
+ flex-wrap: wrap;
+ margin: 25px;
+ max-height: 80vh;
+ overflow-y: auto;
+ overflow-x: hidden;
+ margin-bottom: 20vh;
+}
+.card{
+    width: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: relative;
+    transition: all 0.9s;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius:69% ;
+}
+.card h2{
+    margin: -6px;
+    padding-left: 9px;
+    font-size: 20px;
+    font-weight:50;
+    width: 233px;
+}
+.card p{
+    margin: 2px;
+    color: grey;
+}
+.card >*{
+    padding-top: 0px;
+}
+
+.play{
+position:absolute;
+top: 120px;
+right: 15px;
+opacity: var(--a);
+transition: all 0.1s ease-out;
+}
+.play-button {
+    fill: black;
+    stroke: none;
+    transform: scale(0.8); 
+    transform-origin: center; /* Ensures scaling happens relative to the center */
+}
+.play:hover{
+    opacity: 1;
+    top: 112px;
+    
+ }
+.card:hover{
+    background-color:#1f1f1f;
+    cursor: pointer;
+    --a:1;
+    
+}
+.playbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 10px;
+        filter: invert(1);
+        background: #e2d9d9;
+        border-radius: 10px;
+        width: 90%;
+        padding: 10px;
+        width: 68vw;
+        min-height: 40px;
+}
+
+.seekbar{
+height: 4px;
+width: 99.1%;
+background: black;
+position: absolute;
+bottom: 3px;
+left: 0px;
+margin: 6px;
+cursor: pointer;
+}
+.circle{
+    width: 13px;
+    height: 13px;
+    border-radius: 30px;
+    background-color: black;
+    position: relative;
+    bottom: 7px;
+    left: 0px;
+    transition: left 0.5s;
+}
+.songbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+.songbuttons img{
+    cursor: pointer;
+}
+.songinfo { 
+    width: 250px;
+    color: black;
+    padding: 0px 12px;
+}
+.songtime{ 
+    width: 105px;
+    color: black;
+    padding: 0px 12px;
+}
+.timevol{
+    display: flex;
+    justify-content:space-evenly ;
+    align-items: center;
+}
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    cursor:pointer;
+}
+.range input {
+    cursor: pointer;
+}
+
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+@media (max-width: 1200px) {
+    
+    .left {
+        position: absolute;
+        left: -130%;
+        transition: all .3s;
+        z-index: 1;
+        width: 373px;
+        background-color: black;
+        padding: 0;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+    }
+
+    .songinfo,
+    .songtime {
+        width: auto;
+    }
+
+    .left .close {
+        position: absolute;
+        right: 31px;
+        top: 17px;
+        width: 29px;
+        display: block;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .timevol {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .right {
+        width: 100vw;
+    }
+
+    .playbar {
+        width: calc(100vw - 75px); 
+        height: min-content;
+        /* width: calc(100vw - 75px);
+        position: fixed;
+        bottom: 16px;
+        height: 206px;
+        right: 145px;
+        left: 28px; */
+    }
+    
+
+    .seekbar {
+        width: calc(100vw - 120px);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .right {
+        margin: 0;
+    }
+
+    .card {
+        width: 55vw;
+    }
+
+    .cardContainer {
+        margin: 0;
+        justify-content: center; 
+    }
+
+    
+
+    .abovebar {
+        flex-direction: column;
+        gap: 23px;
+        align-items: center;
+    }
+
+    .cardContainer {
+        max-height: unset;
+        overflow-y: unset;
+        margin-bottom: 35vh;
+    }
+
+    .playbar{
+        right: 25px;
+    }
+    .installmiddle{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+@media (max-width: 500px) {
+    
+    .card {
+        width: 100%;
+    }
+
+    .header>* {
+        padding: 2px;
+    }
+
+    .buttons>* {
+        margin: 0 6px;
+    }
+
+    .header{
+        padding: 7px;
+    }
+
+    .spotifyPlaylists h1 {
+        padding: 4px;
+    }
+
+    .library{
+        height: 85vh;
+    }
+
+    .left{ 
+        width: 100vw;
+    }
+    .installmiddle{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar{
+        padding: 0 4px;
+    }
+}
+/* Responsive Design */
+@media (max-width: 800px) { /* For tablets and smaller devices */
+  
+    .search{
+        width:45px;
+      }
+      .search input{
+        width:0px;
+      }
+      .divider{
+        display:none;
+      }
+      .bucket{
+        display: none;
+      }
+  
+  
+  
+    /* .install{
+        margin-top: 32px;
+        height: 20px;
+    }
+    .installmiddle div{
+        margin-top: 28px;
+        font-size: 12px;
+    }
+    /* Navbar adjustments */
+    /* .navbar {
+      flex-direction: column; /* Stack items vertically 
+      height: 50px; /* Let the height adjust dynamically 
+      padding: 10px; /* Add some spacing 
+      
+    } */
+  
+    /* Middle section: adjust spacing 
+    .middle{
+      width: 100%; /* Full width for smaller screens 
+      justify-content: space-between; /* Space items evenly 
+      margin-top: 10px; /* Add spacing between stacked elements 
+    }
+  
+    /* Home icon 
+    .navbar .home {
+      margin: 0 auto; /* Center the home icon 
+    }
+  
+    /* Search bar adjustments 
+    .searchbar {
+      width: 100%; /* Full width 
+      margin: 10px 0; /* Add spacing 
+    }
+    .searchbar img {
+      top: 5px; /* Adjust icon position 
+      left: 8px; /* Adjust alignment 
+    }
+  
+    /* Divider in searchbar 
+    .searchbar .divider {
+      height: 15px; /* Slightly smaller divider 
+      margin: 8px 8px; /* Adjust margins for compact layout 
+    }
+  
+    /* Input field 
+    .input {
+      width: 70%; /* Reduce input width 
+    }
+  
+    /* Middle2 section (Install & Buttons) 
+    .middle2 {
+      flex-direction: column; /* Stack install and buttons vertically 
+      align-items: flex-start; /* Align content to the left 
+      width: 40%; /* Full width 
+      gap: 0px; /* Increase spacing between items 
+      margin-top: 10px; /* Add spacing from the middle section 
+    }
+  
+    /* Buttons 
+    .buttons {
+      width: 80%;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .signupbtn, .loginbtn {
+      width: auto; /* Let buttons adjust to content 
+      font-size: 14px; /* Slightly smaller font for compact design 
+      padding: 8px 12px; /* Adjust padding for smaller buttons 
+    } */
+  }
+  
+  @media (max-width: 480px) { /* For mobile phones */
+    /* Navbar adjustments */
+    .navbar {
+      align-items: flex-start;
+      height:50px; /* Align items to the left */
+    }
+  
+    /* Middle section */
+    .middle {
+      flex-direction: column; /* Stack icons and searchbar */
+      gap: 10px; /* Add spacing between elements */
+    }
+  
+    /* Searchbar */
+    .searchbar {
+      height: 36px; /* Slightly reduce height */
+      padding: 5px; /* Add padding for compact layout */
+    }
+  
+    /* Input */
+    .input {
+      font-size: 14px; /* Smaller font size */
+    }
+  
+    /* Install and buttons */
+    .install {
+      margin-top: 32px; /* Remove unnecessary margins */
+    }
+    .installmiddle div{
+        margin-top: 28px;
+    }
+    
+    .buttons {
+        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+    }
+  
+    /* Buttons */
+    .signupbtn, .loginbtn {
+      font-size: 13px; /* Smaller font size for compact layout */
+      padding: 6px 10px; /* Adjust padding */
+    }
+  }
+  
